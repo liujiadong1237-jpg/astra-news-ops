@@ -1,0 +1,39 @@
+{
+  "timezone": "Asia/Shanghai",
+  "dailyRunLocalTime": "09:17",
+  "topics": [
+    "奢侈品鞋修复",
+    "球鞋修复寄修",
+    "洗鞋修鞋短视频获客",
+    "闲鱼虚拟资料合规案例",
+    "小红书实体店内容运营",
+    "AI tools for small shop owners"
+  ],
+  "sources": {
+    "x": {
+      "enabled": true,
+      "queries": ["shoe restoration", "sneaker repair", "奢侈品 修复"]
+    },
+    "reddit": {
+      "enabled": true,
+      "subreddits": ["Sneakers", "Repsneakers", "smallbusiness"],
+      "fallback": "user_paste_or_mirror"
+    },
+    "discord": {
+      "enabled": false,
+      "note": "需用户指定可访问频道或粘贴精华后再启用"
+    },
+    "perplexity": {
+      "enabled": true,
+      "prompts": [
+        "Latest trends in luxury sneaker restoration businesses",
+        "中国实体店用小红书获客的最新做法（公开讨论）"
+      ],
+      "fallback": "domestic_web_search"
+    }
+  },
+  "publish": {
+    "xiaohongshu": { "mode": "draft_only_until_user_says_post" },
+    "xianyu": { "mode": "draft_only_until_user_says_post" }
+  }
+}
